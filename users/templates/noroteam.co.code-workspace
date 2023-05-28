@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../vscode_projects/laptop"
+		},
+		{
+			"path": "../../../../vscode_projects/mosh"
+		}
+	],
+	"settings": {}
+}

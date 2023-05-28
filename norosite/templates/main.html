@@ -1,0 +1,448 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{%static 'css/header.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/about-us.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/services.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/plans.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/contact.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/normalize.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/footer.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/cursor.css'%}" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesomble" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{%static 'css/header.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/about-us.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/services.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/plans.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/contact.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/normalize.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/footer.css'%}" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        cursor: none;
+      }
+    </style>
+
+    <title>noroteam</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <header>
+      <nav class="navbar">
+        <a href="main.html"
+          ><img
+            class="logo"
+            src="{%static 'images/NORO-logo.png'%}"
+            alt="noronet-logo"
+        /></a>
+        <ul id="ul-navigation" class="nav-ul" data-visible="false">
+          <li class="nav-li"><a href="main.html">Home</a></li>
+          <li class="nav-li"><a href="#about_us">About us</a></li>
+          <li class="nav-li"><a href="#our-services">Services</a></li>
+          <li class="nav-li"><a href="#plans">Plans</a></li>
+          <li class="nav-li"><a href="#contact">Contact us</a></li>
+          <div class="login-box">
+            <a href="{% url 'users:login'%}">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Sign in/up
+            </a>
+          </div>
+        </ul>
+
+        <button
+          class="mobile-toggle"
+          aria-controls="ul-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+      </nav>
+
+      <!-- background -->
+      <div class="hero-background">
+        <div class="hero-section-wrapper">
+          <p class="hero-text">Lorem, ipsum.</p>
+          <h1 class="hero-header">
+            Lorem, ipsum<br />Lorem, ipsum dolor<br />Lorem, ipsum
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- About us section -->
+      <div class="about-section" id="about_us">
+        <div class="inner-container">
+          <h1>About Us</h1>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco.incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+
+          <div class="skills">
+            <span> Web Design</span>
+            <span> Photoshop & Illustration</span>
+            <span> Coding</span>
+          </div>
+        </div>
+      </div>
+      <!-- services section -->
+      <section id="our-services">
+        <div class="container">
+          <div class="desc">
+            <div class="heading">
+              <h1>Our Services</h1>
+            </div>
+            <div class="text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                nulla ut eveniet doloribus culpa! Quam qui quibusdam
+                exercitationem ab, reprehenderit pariatur ex, sed ducimus
+                accusamus optio cum. Assumenda, dolorum ducimus!
+              </p>
+              <span style="font-size: 8pt">
+                Click on any of our service offerings to view more
+                information.</span
+              >
+            </div>
+          </div>
+          <div class="services">
+            <div id="servicesdetails">
+              <div id="servicesdetailschild" class="invisible">
+                <div id="webdevelopment">
+                  PCG’s micro-assessment is a first step for organizations that
+                  are seeking to better understand the current state of their
+                  data environment and how GDPR’s impact extends to their
+                  processes and business environment. <br />This
+                  micro-assessment process includes;<br /><br />- Process
+                  discovery and consultation sessions with a PCG GDPR analyst<br />
+                  - Light data mapping and preparation of a personal information
+                  landscape<br />
+                  - A comprehensive report detailing GDPR exposure and GAP
+                  analysis for ten proprietary domains
+                </div>
+                <div id="uidesign">
+                  With three levels of document review to choose from, PCG can
+                  provide exactly the type of document review and revision your
+                  organization requires. Our team of GDPR specialists can assist
+                  in selection and prioritization of important documents, and
+                  deliver a level of service ranging from review and high-level
+                  feedback, to deep-dive review, revision, and supporting
+                  facilitation for the adoption of new practices and policies.
+                </div>
+                <div id="pre-press">
+                  The GDPR macro-assessment is a deep-dive analysis into the
+                  processes and environment of an organization and delivers
+                  prioritized solutions for implementation around GDPR
+                  compliance and data protection and data privacy.<br /><br />While
+                  similar to the micro-assessment, the macro-assessment provides
+                  an even deeper evaluation of systems and processes, and also
+                  includes document content GAP analysis, data flow mapping and
+                  diagramming, controller/processor outreach, remediation option
+                  analysis, and an implementation priority roadmap.
+                </div>
+                <div id="packagingdesign">
+                  PCG deliverable services are a flexible answer for your
+                  artifact/document creation needs. These services provide quick
+                  turnaround on identification, creation, and/or implementation
+                  of the items necessary for an effective data protection
+                  environment and GDPR compliance.<br /><br />- Data Inventories
+                  - Process Inventories<br />
+                  - Standard Operating Procedures<br />
+                  - Data Governance Operating Model<br />
+                  - Security Framework Development<br />
+                  - GDPR Readiness Dashboard/Roadmap
+                </div>
+                <div id="printing">
+                  PCG delivers full end-to-end solution implementation for
+                  organizations looking to reach GDPR compliance with a balanced
+                  approach to business, technical, operational, and compliance
+                  requirements.<br /><br />
+                  Our experienced consultants are project management experts
+                  that drive projects to be within scope, on time, and on
+                  budget.
+                </div>
+                <div id="graphicdesign">
+                  Under certain circumstances GDPR mandates organizations
+                  appoint a Data Protection Officer (DPO). <br /><br />Our
+                  innovative outsourced DPO program fulfills this requirement
+                  and is built upon 20+ years of experience in data protection
+                  and data regulations. Our program helps companies achieve and
+                  maintain GDPR compliance while balancing data protection,
+                  technical and operational costs, business impacts, and
+                  innovation.
+                </div>
+              </div>
+            </div>
+            <p id="servicechoicetext"></p>
+            <div class="row" id="column-1">
+              <div class="row1">
+                <div class="service" id="servicebox1">
+                  <div class="service-desc">
+                    <i class="service-icon fas fa-code"></i>
+                    <p>WEB DEVELOPMENT</p>
+                  </div>
+                </div>
+                <div class="service" id="servicebox2">
+                  <div class="service-desc">
+                    <i class="service-icon fas fa-code"> </i>
+                    <p class="service-txt">UI DESIGN</p>
+                  </div>
+                </div>
+                <div class="service" id="servicebox3">
+                  <div class="service-desc">
+                    <i class="service-icon fas fa-wrench"> </i>
+                    <p class="service-txt">PRE-PRESS</p>
+                  </div>
+                </div>
+                <div class="ServiceInfo"></div>
+              </div>
+              <div class="row" id="column-2">
+                <div class="row2">
+                  <div class="service" id="servicebox4">
+                    <div class="service-desc">
+                      <i class="service-icon fas fa-database"> </i>
+                      <p class="service-txt">PACKAGING DESIGN</p>
+                    </div>
+                  </div>
+                  <div class="service" id="servicebox5">
+                    <div class="service-desc">
+                      <i class="service-icon fas fa-tasks"> </i>
+                      <p class="service-txt">PRINTING</p>
+                    </div>
+                  </div>
+                  <div class="service" id="servicebox6">
+                    <div class="service-desc">
+                      <i class="service-icon fas fa-certificate"> </i>
+                      <p class="service-txt">GRAPHIC</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-fix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- plans section -->
+      <section class="plans" id="plans">
+        <div class="container">
+          <div class="top">
+            <h1>Plans & Pricing</h1>
+            <div class="toggle-btn">
+              <span style="margin: 0.8em">Annually</span>
+              <label class="switch">
+                <input type="checkbox" id="checbox" onclick="check()" ; />
+                <span class="slider round"></span>
+              </label>
+              <span style="margin: 0.8em">Monthly</span>
+            </div>
+          </div>
+
+          <div class="package-container">
+            <div class="packages">
+              <h1>Basic</h1>
+              <h2 class="text1">&dollar;9.99</h2>
+              <h2 class="text2">&dollar;119.99</h2>
+              <ul class="list">
+                <li class="first">Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum.</li>
+              </ul>
+              <a href="#" class="button button1">Start Now</a>
+            </div>
+            <div class="packages">
+              <h1>Professional</h1>
+              <h2 class="text1">&dollar;19.99</h2>
+              <h2 class="text2">&dollar;239.99</h2>
+              <ul class="list">
+                <li class="first">Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum.</li>
+              </ul>
+              <a href="#" class="button button2">Start Now</a>
+            </div>
+            <div class="packages">
+              <h1>Master</h1>
+              <h2 class="text1">&dollar;29.99</h2>
+              <h2 class="text2">&dollar;359.99</h2>
+              <ul class="list">
+                <li class="first">Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum.</li>
+              </ul>
+              <a href="sign.html" class="button button3">Start Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact us -->
+      <section class="contact" id="contact">
+        <div class="us__container">
+          <div class="heading text-center">
+            <h2>Contact <span> Us </span></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor <br />incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="us__row">
+            <div class="col-md-5">
+              <div class="title">
+                <h3>Contact detail</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="content">
+                <!-- Info-1 -->
+                <div class="info">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h4 class="d-inline-block">
+                    PHONE :
+                    <br />
+                    <span>+989144504158 , +989034449381</span>
+                  </h4>
+                </div>
+                <!-- Info-2 -->
+                <div class="info">
+                  <i class="far fa-envelope"></i>
+                  <h4 class="d-inline-block">
+                    EMAIL :
+                    <br />
+                    <span>example@info.com</span>
+                  </h4>
+                </div>
+                <!-- Info-3 -->
+                <div class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h4 class="d-inline-block">
+                    ADDRESS :<br />
+                    <span
+                      >Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit.</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <form method="post" action="{%url "norosite:contact_us"%}" >
+                {% csrf_token %}
+                <div class="us__row">
+                  <div class="col-sm-6">
+                    <input
+                      name = "name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      name = "email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <input
+                      name = "subject"
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name = "message"
+                    type = "text"
+                    class="form-control"
+                    rows="5"
+                    id="comment"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <button class="btn btn-block send" type="submit">
+                  Send Now!
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer__container">
+        <!-- Social media icons -->
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/noronet.co?igshid=NTc4MTIwNjQ2YQ=="
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="copyright">
+          Copyright &copy; <span>2023 noroteam</span>. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e40b2dd0a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{%static 'js/cursor.js'%}"></script>
+    <script src="{%static 'js/plans.js'%}"></script>
+    <script src="{%static 'js/services.js'%}"></script>
+    <script src="{%static 'js/header.js'%}"></script>
+  </body>
+</html>
